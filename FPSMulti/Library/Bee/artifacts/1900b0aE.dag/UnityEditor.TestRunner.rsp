@@ -121,7 +121,7 @@
 -define:PUN_2_19_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"C:/Users/konra/Documents/GitHub/MultiFPS/FPSMulti/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+-r:"C:/Users/konra/Documents/GitHub/FPSGame/FPSMulti/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 -r:"D:/Unity/2021.3.4f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"D:/Unity/2021.3.4f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"D:/Unity/2021.3.4f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
