@@ -79,6 +79,14 @@ namespace FPSMulti
             currentIndex = pInd;
         }
 
+
+        [PunRPC]
+        private void DestroyGun(int pInd)
+        {
+            Debug.Log("zniszcz");
+            if (currentWeapon != null) Destroy(currentWeapon);
+        }
+
         [PunRPC]
         public void Aim(bool isAiming)
         {

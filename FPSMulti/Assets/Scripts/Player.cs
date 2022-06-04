@@ -150,11 +150,13 @@ namespace FPSMulti
                 if (currentHealth <= 0)
                 {
                     mng.Spawn();
+                    photonView.RPC("DestroyGun", RpcTarget.All, 0);
                     PhotonNetwork.Destroy(gameObject);
                     Debug.Log("===> You died!");
                 }
             }
         }
+
 
         #endregion Public Methods
     }
