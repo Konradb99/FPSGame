@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 8312782919540174670}
   - component: {fileID: 8242995294507629740}
   - component: {fileID: -6940055352638409259}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MachineGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}

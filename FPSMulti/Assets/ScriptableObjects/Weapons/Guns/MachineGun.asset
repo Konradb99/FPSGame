@@ -18,9 +18,9 @@ MonoBehaviour:
   clipsize: 30
   firerate: 3000
   distance: 1000
-  aimSpeed: 20
-  bloom: 15
-  aimbloom: 1
+  aimSpeed: 10
+  bloom: 20
+  aimbloom: 10
   recoil: 10
   kicback: 0.2
   reloadTime: 5
