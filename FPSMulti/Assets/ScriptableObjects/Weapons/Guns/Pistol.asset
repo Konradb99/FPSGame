@@ -19,8 +19,8 @@ MonoBehaviour:
   firerate: 9000
   distance: 1000
   aimSpeed: 13
-  bloom: 15
-  aimbloom: 20
+  bloom: 20
+  aimbloom: 10
   recoil: 10
   kicback: 0.2
   reloadTime: 2

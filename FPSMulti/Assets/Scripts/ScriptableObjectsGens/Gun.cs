@@ -11,10 +11,10 @@ public class Gun : ScriptableObject
     public int clipsize;
     public float firerate;
     public float distance;
-    public float aimSpeed;
-    public float bloom;
-    public float aimbloom;
-    public float recoil;
+    public float aimSpeed; //wiecej to szybciej
+    public float bloom; //wiecej to wiêkszy rozstrza³. 20 to idealny
+    public float aimbloom; //jak wyzej, przy celowaniu.
+    public float recoil; //odrzut pionowy broni
     public float kicback;
     public float reloadTime;
 

@@ -38,7 +38,15 @@ namespace FPSMulti
         private void Update()
         {
             if (photonView.IsMine && Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                Destroy(currentWeapon);
                 photonView.RPC("Equip", RpcTarget.All, 0); //nazwa funkcji z string, do kogo, argument funkcji
+            }
+            if (photonView.IsMine && Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                Destroy(currentWeapon);
+                photonView.RPC("Equip", RpcTarget.All, 1); //nazwa funkcji z string, do kogo, argument funkcji
+            }
 
             if (currentWeapon != null)
             {
@@ -122,13 +130,13 @@ namespace FPSMulti
             Vector3 bloom = spawn.position + spawn.forward * 1000f;
             if (aiming)
             {
-                bloom += Random.Range(-loadout[currentIndex].bloom, loadout[currentIndex].bloom) * spawn.up;
-                bloom += Random.Range(-loadout[currentIndex].bloom, loadout[currentIndex].bloom) * spawn.right;
+                bloom += Random.Range(-loadout[currentIndex].aimbloom, loadout[currentIndex].aimbloom) * spawn.up;
+                bloom += Random.Range(-loadout[currentIndex].aimbloom, loadout[currentIndex].aimbloom) * spawn.right;
             }
             else
             {
-                bloom += Random.Range(-loadout[currentIndex].aimbloom, loadout[currentIndex].aimbloom) * spawn.up;
-                bloom += Random.Range(-loadout[currentIndex].aimbloom, loadout[currentIndex].aimbloom) * spawn.right;
+                bloom += Random.Range(-loadout[currentIndex].bloom, loadout[currentIndex].bloom) * spawn.up;
+                bloom += Random.Range(-loadout[currentIndex].bloom, loadout[currentIndex].bloom) * spawn.right;
             }
 
             bloom -= spawn.position;
