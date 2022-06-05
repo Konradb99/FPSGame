@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.UI;
 
 namespace FPSMulti
 {
@@ -10,6 +11,7 @@ namespace FPSMulti
         #region Variables
 
         public Gun[] loadout;
+        public Blade blade;
         public Transform weaponParent;
         public GameObject bulletholePrefab;
         public LayerMask canBeShot;
@@ -48,6 +50,12 @@ namespace FPSMulti
                 photonView.RPC("Equip", RpcTarget.All, 1); //nazwa funkcji z string, do kogo, argument funkcji
             }
 
+            if (photonView.IsMine && Input.GetKeyDown(KeyCode.Alpha9))
+            {
+                Destroy(currentWeapon);
+                photonView.RPC("EquipBlade", RpcTarget.All);
+            }
+
             if (currentWeapon != null)
             {
                 if (photonView.IsMine)
@@ -61,7 +69,7 @@ namespace FPSMulti
                         }
                     }
 
-                    if (Input.GetKey(KeyCode.R))
+                    if (Input.GetKeyDown(KeyCode.R))
                     {
                         Debug.Log("Reloading");
                         StartCoroutine(Reload(loadout[currentIndex].reloadTime));
@@ -94,6 +102,15 @@ namespace FPSMulti
             newEquipment.GetComponent<Sway>().isMine = photonView.IsMine;
             currentWeapon = newEquipment;
             currentIndex = pInd;
+        }
+
+        [PunRPC]
+        private void EquipBlade()
+        {
+            GameObject newEquipment = Instantiate(blade.prefab, weaponParent.position, weaponParent.rotation, weaponParent) as GameObject;
+            newEquipment.transform.localPosition = Vector3.zero;
+            newEquipment.transform.localEulerAngles = Vector3.zero;
+            currentWeapon = newEquipment;
         }
 
         [PunRPC]
@@ -192,5 +209,17 @@ namespace FPSMulti
         }
 
         #endregion Private Methods
+
+        #region Public Methods
+
+        public void RefreshAmmo(Text ammotext)
+        {
+            int tClip = loadout[currentIndex].GetClip();
+            int tStash = loadout[currentIndex].GetStash();
+
+            ammotext.text = tClip + " / " + tStash;
+        }
+
+        #endregion Public Methods
     }
 }

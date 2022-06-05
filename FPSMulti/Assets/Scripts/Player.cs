@@ -1,5 +1,6 @@
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.UI;
 
 namespace FPSMulti
 {
@@ -16,6 +17,7 @@ namespace FPSMulti
         public Transform groundDetector;
         public GameObject cameraParent;
         public float maxHealth;
+        public Text debugtext;
 
         private Rigidbody rig;
         private float baseFOV = 60.0f; //field of view
@@ -27,9 +29,11 @@ namespace FPSMulti
         private float movementCounter;
         private float idleCounter;
         private Manager mng;
+        private Weapon weapon;
 
         private float currentHealth;
         private Transform uiHealthBar;
+        private Text uiAmmo;
 
         #endregion Variables
 
@@ -38,6 +42,7 @@ namespace FPSMulti
         private void Start()
         {
             mng = GameObject.Find("Manager").GetComponent<Manager>();
+            weapon = GetComponent<Weapon>();
             currentHealth = maxHealth;
             cameraParent.SetActive(photonView.IsMine); //ustaw jedyna aktywn¹ kamerê obecnego gracza
 
@@ -48,6 +53,8 @@ namespace FPSMulti
             else
             {
                 uiHealthBar = GameObject.Find("HUD/Health/Bar").transform;
+                uiAmmo = GameObject.Find("HUD/Ammo/AmmoText").GetComponent<Text>();
+                Debug.Log(uiAmmo.text);
                 RefreshHealthBar();
             }
             baseFOV = normalCam.fieldOfView;
@@ -72,7 +79,7 @@ namespace FPSMulti
             aim = Input.GetKey(KeyCode.Z) || Input.GetMouseButton(1);
 
             //States
-            bool isGrounded = Physics.Raycast(groundDetector.position, Vector3.down, 0.1f, ground);
+            bool isGrounded = Physics.Raycast(groundDetector.position, Vector3.down, 0.15f, ground);
             bool isJumping = jump && isGrounded;
             bool isSprinting = sprint && vMove > 0 && !isJumping && isGrounded; //czyli tylko gdy porusza siê w przod
 
@@ -82,7 +89,9 @@ namespace FPSMulti
 
             if (Input.GetKeyDown(KeyCode.U)) TakeDamage(50);
 
+            //UI Refreshes
             RefreshHealthBar();
+            weapon.RefreshAmmo(uiAmmo);
         }
 
         // Update is called once per frame
@@ -156,7 +165,6 @@ namespace FPSMulti
                 }
             }
         }
-
 
         #endregion Public Methods
     }

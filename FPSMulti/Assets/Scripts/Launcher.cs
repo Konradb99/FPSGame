@@ -18,7 +18,6 @@ namespace FPSMulti
             Debug.Log("Connected.");
             Join();
             base.OnConnectedToMaster();
-            
         }
 
         public override void OnJoinedRoom() //gdy juz istnieje room i gracz siê ³¹czy, wywo³uje siê StartGame()
@@ -32,6 +31,7 @@ namespace FPSMulti
             Create();
             base.OnJoinRandomFailed(returnCode, message);
         }
+
         public void Connect()
         {
             Debug.Log("Trying to connect...");
@@ -39,7 +39,7 @@ namespace FPSMulti
             PhotonNetwork.ConnectUsingSettings();
             //w³¹cza siê OnConnecterToMaster
         }
-        
+
         public void Join()
         {
             PhotonNetwork.JoinRandomRoom(); //do³¹cza, a jesli nie, wywo³uje OnJoinRandomFailed
@@ -52,7 +52,7 @@ namespace FPSMulti
 
         public void StartGame()
         {
-            if(PhotonNetwork.CurrentRoom.PlayerCount==1)
+            if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
             {
                 PhotonNetwork.LoadLevel(1); //to jest za³adowanie sceny o takim indeksie w build settings
             }

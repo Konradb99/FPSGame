@@ -46,8 +46,12 @@ public class Gun : ScriptableObject
         {
             Debug.Log("Reload");
             //throws away remaining bullets
+            Debug.Log("Stash: " + stash);
+            Debug.Log("Clip: " + clipsize);
             stash -= clipsize;
             clip = clipsize;
+            Debug.Log("Later Stash: " + stash);
+            Debug.Log("Later Clip: " + clipsize);
             return true;
 
             //adds bullet to existing ones
