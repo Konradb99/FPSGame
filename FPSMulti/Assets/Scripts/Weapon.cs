@@ -18,6 +18,7 @@ namespace FPSMulti
         private int currentIndex;
         private float bloomF;
         private float currentCooldown;
+        private bool isReloading;
 
         #endregion Variables
 
@@ -50,7 +51,12 @@ namespace FPSMulti
                         {
                             photonView.RPC("Shoot", RpcTarget.All, Input.GetKey(KeyCode.Z));
                         }
-                        else loadout[currentIndex].Reload();
+                    }
+
+                    if (Input.GetKey(KeyCode.R))
+                    {
+                        Debug.Log("Reloading");
+                        StartCoroutine(Reload(loadout[currentIndex].reloadTime));
                     }
 
                     //                    if (currentCooldown > 0) currentCooldown = -Time.deltaTime;
@@ -69,8 +75,11 @@ namespace FPSMulti
         [PunRPC]
         private void Equip(int pInd)
         {
-            if (currentWeapon != null) Destroy(currentWeapon);
-
+            if (currentWeapon != null)
+            {
+                if (isReloading) StopCoroutine("Reload");
+                Destroy(currentWeapon);
+            }
             GameObject newEquipment = Instantiate(loadout[pInd].prefab, weaponParent.position, weaponParent.rotation, weaponParent) as GameObject;
             newEquipment.transform.localPosition = Vector3.zero;
             newEquipment.transform.localEulerAngles = Vector3.zero;
@@ -78,7 +87,6 @@ namespace FPSMulti
             currentWeapon = newEquipment;
             currentIndex = pInd;
         }
-
 
         [PunRPC]
         private void DestroyGun(int pInd)
@@ -163,6 +171,16 @@ namespace FPSMulti
         private void TakeDamage(int dmg)
         {
             GetComponent<Player>().TakeDamage(dmg);
+        }
+
+        private IEnumerator Reload(float pWait)
+        {
+            isReloading = true;
+            currentWeapon.SetActive(false);
+            yield return new WaitForSeconds(pWait);
+            loadout[currentIndex].Reload();
+            currentWeapon.SetActive(true);
+            isReloading = false;
         }
 
         #endregion Private Methods

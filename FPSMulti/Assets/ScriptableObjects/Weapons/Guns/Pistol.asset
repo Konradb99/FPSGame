@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Pistol
   damage: 30
-  ammo: 24
+  ammo: 48
   clipsize: 12
   firerate: 9000
   distance: 1000
@@ -23,4 +23,5 @@ MonoBehaviour:
   aimbloom: 20
   recoil: 10
   kicback: 0.2
+  reloadTime: 2
   prefab: {fileID: 6981933848852543382, guid: f7c78e6b66ed8c3439d9e0c03f229677, type: 3}

@@ -16,6 +16,7 @@ public class Gun : ScriptableObject
     public float aimbloom;
     public float recoil;
     public float kicback;
+    public float reloadTime;
 
     public GameObject prefab;
 
