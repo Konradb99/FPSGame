@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 5613
+  controlID: 9709
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 5614
+  controlID: 9710
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 5615
+  controlID: 9711
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -400,10 +400,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: a645ffff9461ffffcc77ffff34fbffff1c5700005e5700002cbb000074bb00007cbb0000e0c20000
+      scrollPos: {x: 0, y: 28}
+      m_SelectedIDs: 4611ffff
+      m_LastClickedID: -61114
+      m_ExpandedIDs: 4c1affffa238fffff477ffff3eaeffff34fbffff7a500000ca500000e45700002e58000046a70000a0a90000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -653,9 +653,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -191.43234, y: -46.81659, z: 62.87143}
+    m_Target: {x: -274.85187, y: 40.122986, z: -9.592611}
     speed: 2
-    m_Value: {x: -191.43234, y: -46.81659, z: 62.87143}
+    m_Value: {x: -274.85187, y: 40.122986, z: -9.592611}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -702,20 +702,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.2950553, y: -0.06896998, z: 0.021388253, w: -0.9527988}
+    m_Target: {x: 0.21792331, y: 0.6842206, z: -0.22662203, w: 0.65810347}
     speed: 2
-    m_Value: {x: -0.29507264, y: -0.06753741, z: 0.020944625, w: -0.95285475}
+    m_Value: {x: 0.2165859, y: 0.68551034, z: -0.22590852, w: 0.65736717}
   m_Size:
-    m_Target: 78.51548
+    m_Target: 58.382458
     speed: 2
-    m_Value: 75.13443
+    m_Value: 58.382458
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 0.7662
+    m_SpeedNormalized: 0.38
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -804,22 +804,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Buildings
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 82
   m_LastFolders:
-  - Assets/Resources/Buildings
+  - Assets/Scenes
   m_LastFoldersGridSize: 82
   m_LastProjectPath: C:\Users\konra\Documents\GitHub\FPSGame\FPSMulti
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 72740000
-    m_LastClickedID: 29810
-    m_ExpandedIDs: 00000000c6720000c8720000ca720000cc720000ce720000d0720000d2720000d472000074740000
+    m_SelectedIDs: 7a750000
+    m_LastClickedID: 30074
+    m_ExpandedIDs: 00000000a2730000a6730000a8730000aa730000ac730000ae730000b0730000b2730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -847,7 +847,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c6720000ca720000cc720000ce720000d0720000d2720000d472000074740000
+    m_ExpandedIDs: 00000000a2730000a6730000a8730000aa730000ac730000ae730000b0730000b2730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
