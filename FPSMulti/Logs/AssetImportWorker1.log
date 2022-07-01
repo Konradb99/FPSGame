@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.4f1 (cb45f9cae8b7) revision 13321721'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'pl' Physical Memory: 32627 MB
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'pl' Physical Memory: 24416 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\Unity\2021.3.4f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.3.4f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/konra/Documents/GitHub/FPSGame/FPSMulti
+D:/STUDIA/0.INF/I6. Development of computer games/ProjectFPS/FPSGame/FPSMulti
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-52630
-Successfully changed project path to: C:/Users/konra/Documents/GitHub/FPSGame/FPSMulti
-C:/Users/konra/Documents/GitHub/FPSGame/FPSMulti
+60767
+Successfully changed project path to: D:/STUDIA/0.INF/I6. Development of computer games/ProjectFPS/FPSGame/FPSMulti
+D:/STUDIA/0.INF/I6. Development of computer games/ProjectFPS/FPSGame/FPSMulti
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,363 +47,112 @@ C:/Users/konra/Documents/GitHub/FPSGame/FPSMulti
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 37.55 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 51.79 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.4f1 (cb45f9cae8b7)
-[Subsystems] Discovering subsystems at path D:/Unity/2021.3.4f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/konra/Documents/GitHub/FPSGame/FPSMulti/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/STUDIA/0.INF/I6. Development of computer games/ProjectFPS/FPSGame/FPSMulti/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Renderer: NVIDIA GeForce GTX 1660 Ti with Max-Q Design (ID=0x2191)
     Vendor:   NVIDIA
-    VRAM:     4019 MB
-    Driver:   30.0.15.1215
+    VRAM:     5991 MB
+    Driver:   30.0.15.1179
 Initialize mono
-Mono path[0] = 'D:/Unity/2021.3.4f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity/2021.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/Unity/2021.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56964
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity/2021.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004542 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.043727 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 43.36 ms, found 2 plugins.
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 62.10 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.632 seconds
+- Completed reload, in  1.064 seconds
 Domain Reload Profiling:
-	ReloadAssembly (633ms)
-		BeginReloadAssembly (69ms)
+	ReloadAssembly (1064ms)
+		BeginReloadAssembly (148ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (441ms)
-			LoadAssemblies (68ms)
+		EndReloadAssembly (666ms)
+			LoadAssemblies (136ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (114ms)
+			SetupTypeCache (166ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (240ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (366ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (104ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (43ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (142ms)
-				ProcessInitializeOnLoadMethodAttributes (47ms)
+				RefreshPlugins (62ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (133ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007031 seconds.
+Registered in 0.008692 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.022 seconds
+- Completed reload, in  1.655 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1023ms)
-		BeginReloadAssembly (110ms)
+	ReloadAssembly (1656ms)
+		BeginReloadAssembly (323ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (12ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (784ms)
-			LoadAssemblies (74ms)
+			CreateAndSetChildDomain (139ms)
+		EndReloadAssembly (1121ms)
+			LoadAssemblies (146ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (212ms)
+			SetupTypeCache (298ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (64ms)
-			SetupLoadedEditorAssemblies (367ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (547ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (34ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (249ms)
-				ProcessInitializeOnLoadMethodAttributes (33ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				BeforeProcessingInitializeOnLoad (117ms)
+				ProcessInitializeOnLoadAttributes (312ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (38ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1906 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 25 unused Assets / (49.3 KB). Loaded Objects now: 2386.
-Memory consumption went from 86.4 MB to 86.3 MB.
-Total: 3.235600 ms (FindLiveObjects: 0.169100 ms CreateObjectMapping: 0.105500 ms MarkObjects: 2.816500 ms  DeleteObjects: 0.142500 ms)
+Unloading 1907 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (47.4 KB). Loaded Objects now: 2371.
+Memory consumption went from 80.5 MB to 80.5 MB.
+Total: 3.795000 ms (FindLiveObjects: 0.209300 ms CreateObjectMapping: 0.112600 ms MarkObjects: 3.384100 ms  DeleteObjects: 0.087500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 21827.375431 seconds.
-  path: Assets/Resources/Misc/Cars
-  artifactKey: Guid(e6c016ea2ad23f74297c44ee994bcca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars using Guid(e6c016ea2ad23f74297c44ee994bcca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78d3d7ebb2cc60277d304bdb7794f168') in 0.005013 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.104833 seconds.
-  path: Assets/Resources/Misc/Cars/delivery.fbx
-  artifactKey: Guid(d2043c16b28babb49a0d3d55b029e46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/delivery.fbx using Guid(d2043c16b28babb49a0d3d55b029e46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c919dd757529f99c82aa2af0b3c5a5c8') in 0.294379 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Resources/Misc/Cars/van.fbx
-  artifactKey: Guid(f317daa6278bf994e9a4b1e257744030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/van.fbx using Guid(f317daa6278bf994e9a4b1e257744030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6811cabf22bb09e3439382bcda037e93') in 0.096913 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Resources/Misc/Cars/raceFuture.fbx
-  artifactKey: Guid(19cd7f01530a2844199a2ea2370b572b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/raceFuture.fbx using Guid(19cd7f01530a2844199a2ea2370b572b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd78ff4f98aea936f9e291625588c01b7') in 0.081002 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Resources/Misc/Cars/truckFlat.fbx
-  artifactKey: Guid(687be2a22a946af43a01551cc30e3884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/truckFlat.fbx using Guid(687be2a22a946af43a01551cc30e3884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1729dbd55ae77765ec2a32a6a38ed41') in 0.087652 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Resources/Misc/Cars/suv.fbx
-  artifactKey: Guid(631dbcfbdb7fae247b46a4260f028d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/suv.fbx using Guid(631dbcfbdb7fae247b46a4260f028d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9660df9ee910ad4de05e37095caf6e62') in 0.090912 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Resources/Misc/Cars/deliveryFlat.fbx
-  artifactKey: Guid(6e764c2f9a1595f47acaaf912b926409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/deliveryFlat.fbx using Guid(6e764c2f9a1595f47acaaf912b926409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24aded2b06805fb4364fef5a3e781263') in 0.089499 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Resources/Misc/Cars/garbageTruck.fbx
-  artifactKey: Guid(6d8494619b61f824a81459a61d5945e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/garbageTruck.fbx using Guid(6d8494619b61f824a81459a61d5945e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '933f290ddd3005aa5fd346863cd4df14') in 0.091352 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Resources/Misc/Cars/wheelTractorDarkFront.fbx
-  artifactKey: Guid(139b64fba1180d340903444d9c512e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/wheelTractorDarkFront.fbx using Guid(139b64fba1180d340903444d9c512e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ae3cd526bb59e44fdb834893589b3b') in 0.026000 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Resources/Misc/Cars/sedan.fbx
-  artifactKey: Guid(838f79c02792ba644ae9b3783a80ad5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/sedan.fbx using Guid(838f79c02792ba644ae9b3783a80ad5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb79acdd3ace4ab561dfac1804d5cad2') in 0.163442 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Resources/Misc/Cars/firetruck.fbx
-  artifactKey: Guid(f41e0c4c18a1cac45bd1b650a818edc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/firetruck.fbx using Guid(f41e0c4c18a1cac45bd1b650a818edc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8398d35cd83da9db2036dbc6d2de2f86') in 0.113265 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Resources/Misc/Cars/wheelRacing.fbx
-  artifactKey: Guid(ffd3cd76416a76a48827d267c7885f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/wheelRacing.fbx using Guid(ffd3cd76416a76a48827d267c7885f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f7b0ce3286210da69b05eb3d24ae2c9') in 0.027248 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Resources/Misc/Cars/tractorPolice.fbx
-  artifactKey: Guid(c07fe00be596a6e49922c655e8eca604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/tractorPolice.fbx using Guid(c07fe00be596a6e49922c655e8eca604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b5e3db0d3d600579b290f0c3584d60') in 0.114218 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Resources/Misc/Cars/wheelTractorBack.fbx
-  artifactKey: Guid(c42411e31f015ce47b77e9dc097d5ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/wheelTractorBack.fbx using Guid(c42411e31f015ce47b77e9dc097d5ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83cc29832163e3a10a5bb7b1fe95a04a') in 0.026092 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Resources/Misc/Cars/wheelTractorDarkBack.fbx
-  artifactKey: Guid(929871a853656e94ca9b2b8995e36625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/wheelTractorDarkBack.fbx using Guid(929871a853656e94ca9b2b8995e36625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a531c99ca3c7ab8c3518d536b25d3199') in 0.027893 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 47.681063 seconds.
-  path: Assets/Resources/Misc/Cars/ambulance.fbx
-  artifactKey: Guid(d61e521a974225b45b4ef8396701695a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/ambulance.fbx using Guid(d61e521a974225b45b4ef8396701695a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f6757d464eeab90ac8211053d311de4') in 0.117258 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Resources/Misc/Cars/suvLuxury.fbx
-  artifactKey: Guid(5f008d997710cee4ba5b971d75d97d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/suvLuxury.fbx using Guid(5f008d997710cee4ba5b971d75d97d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '861ed194552ccddfd27b46e1607aad01') in 0.098454 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Resources/Misc/Cars/sedanSports.fbx
-  artifactKey: Guid(589e5decc5088b042b02d97c70abda5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/sedanSports.fbx using Guid(589e5decc5088b042b02d97c70abda5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1188c273c9a562a7a5509b8ff5f32ae3') in 0.088806 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Resources/Misc/Cars/tractorShovel.fbx
-  artifactKey: Guid(c8675ae76458ef14b9f9157e59f9133f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/tractorShovel.fbx using Guid(c8675ae76458ef14b9f9157e59f9133f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb8bae73bfdeb6c337b94e4074a3d24') in 0.096286 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Resources/Misc/Cars/race.fbx
-  artifactKey: Guid(d5f899f75293e494c929b0c0409da6db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/race.fbx using Guid(d5f899f75293e494c929b0c0409da6db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ec1e7970dfa178aabdf9b039943207') in 0.091456 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Resources/Misc/Cars/hatchbackSports.fbx
-  artifactKey: Guid(0a7d4828bb0a1de40ba79bb578f6bb28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/hatchbackSports.fbx using Guid(0a7d4828bb0a1de40ba79bb578f6bb28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa6308271e04228f02bd86991e3583b') in 0.093217 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Resources/Misc/Cars/sedan.fbx
-  artifactKey: Guid(838f79c02792ba644ae9b3783a80ad5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/sedan.fbx using Guid(838f79c02792ba644ae9b3783a80ad5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c94ad222dadf73e92af222a9cfff86b') in 0.087472 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Resources/Misc/Cars/firetruck.fbx
-  artifactKey: Guid(f41e0c4c18a1cac45bd1b650a818edc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/firetruck.fbx using Guid(f41e0c4c18a1cac45bd1b650a818edc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c584ec4984098a6d584fc9af492d37f') in 0.088493 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Resources/Misc/Cars/truck.fbx
-  artifactKey: Guid(2ea79793e38349147ae65b4fab53ef9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/truck.fbx using Guid(2ea79793e38349147ae65b4fab53ef9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982d9589f5523c86d55ed9902b571448') in 0.090104 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Resources/Misc/Cars/police.fbx
-  artifactKey: Guid(afca866a859cbb5499916ecaf652d69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/police.fbx using Guid(afca866a859cbb5499916ecaf652d69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '132af831001a908e1fea41df37509ecc') in 0.195014 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.358047 seconds.
-  path: Assets/Resources/Misc/Cars/wheelDark.fbx
-  artifactKey: Guid(cba4ff69d7776594f89db2488df51061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/wheelDark.fbx using Guid(cba4ff69d7776594f89db2488df51061) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9df3bc2af0e204e270107b6c662d0a7c') in 0.030347 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Resources/Misc/Cars/wheelTractorDarkFront.fbx
-  artifactKey: Guid(139b64fba1180d340903444d9c512e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/wheelTractorDarkFront.fbx using Guid(139b64fba1180d340903444d9c512e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2191a0e6c01b9ff7c1c99667e6fdb5c1') in 0.059738 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Resources/Misc/Cars/wheelDefault.fbx
-  artifactKey: Guid(99169c60ae30a1140841f8626d0378fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/wheelDefault.fbx using Guid(99169c60ae30a1140841f8626d0378fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0545ae5d3ac3d5c4fd3baa1558f9ff4b') in 0.042800 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Resources/Misc/Cars/wheelTractorBack.fbx
-  artifactKey: Guid(c42411e31f015ce47b77e9dc097d5ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/wheelTractorBack.fbx using Guid(c42411e31f015ce47b77e9dc097d5ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ba8496c04461ca7de4cb069b368e8e') in 0.045797 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.718730 seconds.
-  path: Assets/Resources/Misc/Cars/Green Car.fbx
-  artifactKey: Guid(4b88b61a6e8cee043890c66989cddd4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/Green Car.fbx using Guid(4b88b61a6e8cee043890c66989cddd4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70dd7783c3c662c9a7b167f0259f01c5') in 0.135538 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Resources/Misc/Cars/Red Car.fbx
-  artifactKey: Guid(3ceb7eefdd489714c95c53f3d3032bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/Red Car.fbx using Guid(3ceb7eefdd489714c95c53f3d3032bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4625793b4fe1d42c7d1db61d8067c5f4') in 0.106738 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.512022 seconds.
-  path: Assets/Resources/Misc/Cars/Blue Car.fbx
-  artifactKey: Guid(4214a08ce504c5d49b81dfc95d501b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/Blue Car.fbx using Guid(4214a08ce504c5d49b81dfc95d501b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70c869cc979bc94207efef34d88a4420') in 0.093260 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Resources/Misc/Cars/Green Car.fbx
-  artifactKey: Guid(4b88b61a6e8cee043890c66989cddd4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Misc/Cars/Green Car.fbx using Guid(4b88b61a6e8cee043890c66989cddd4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf4e53779029eba7f266411c3e82a26') in 0.123521 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007714 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.736 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1737ms)
-		BeginReloadAssembly (140ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1410ms)
-			LoadAssemblies (129ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (547ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (110ms)
-			SetupLoadedEditorAssemblies (502ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (27ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (94ms)
-				ProcessInitializeOnLoadAttributes (335ms)
-				ProcessInitializeOnLoadMethodAttributes (40ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.43 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1899 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (31.7 KB). Loaded Objects now: 2431.
-Memory consumption went from 91.2 MB to 91.2 MB.
-Total: 3.344300 ms (FindLiveObjects: 0.213800 ms CreateObjectMapping: 0.076200 ms MarkObjects: 3.034900 ms  DeleteObjects: 0.017900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 

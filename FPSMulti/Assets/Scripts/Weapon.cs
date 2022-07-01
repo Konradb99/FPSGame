@@ -220,6 +220,10 @@ namespace FPSMulti
             ammotext.text = tClip + " / " + tStash;
         }
 
+        public void GatheredAmmo(int count)
+        {
+            loadout[currentIndex].AddToStash(count);
+        }
         #endregion Public Methods
     }
 }

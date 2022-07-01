@@ -69,4 +69,9 @@ public class Gun : ScriptableObject
 
     public int GetClip()
     { return clip; }
+
+    public void AddToStash(int count)
+    {
+        stash += count;
+    }
 }
