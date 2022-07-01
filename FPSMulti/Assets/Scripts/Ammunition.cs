@@ -1,18 +1,19 @@
+using FPSMulti;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AmmoHandler : MonoBehaviour
+public class Ammunition : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int count;
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
+        Player player = other.GetComponent<Player>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(player != null)
+        {
+            player.GatherAmmo(count);
+            gameObject.SetActive(false);
+        }
     }
 }

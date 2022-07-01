@@ -144,10 +144,7 @@ namespace FPSMulti
             uiHealthBar.localScale = Vector3.Lerp(uiHealthBar.localScale, new Vector3(healthRatio, 1, 1), Time.deltaTime * 8f);
         }
 
-        private void GatherAmmo(int count)
-        {
-            weapon.GatheredAmmo(count);
-        }
+     
         #endregion Private Methods
 
         #region Public Methods
@@ -169,7 +166,10 @@ namespace FPSMulti
                 }
             }
         }
-
+        public void GatherAmmo(int count)
+        {
+            weapon.GatheredAmmo(count);
+        }
         #endregion Public Methods
     }
 }
