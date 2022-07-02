@@ -370,6 +370,7 @@
 "Assets/Scripts/Ammunition.cs"
 "Assets/Scripts/Launcher.cs"
 "Assets/Scripts/Look.cs"
+"Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/Manager.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/ScriptableObjectsGens/Blade.cs"
