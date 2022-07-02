@@ -61,11 +61,25 @@ namespace FPSMulti
                 if (photonView.IsMine)
                 {
                     Aim((Input.GetKey(KeyCode.Z) || Input.GetMouseButton(1)));
-                    if (Input.GetMouseButtonDown(0))//LPM
+
+                    if (loadout[currentIndex].burst!=1)
                     {
-                        if (loadout[currentIndex].CanFire())
+                        if (Input.GetMouseButtonDown(0) && currentCooldown <= 0)//LPM
                         {
-                            photonView.RPC("Shoot", RpcTarget.All, Input.GetKey(KeyCode.Z));
+                            if (loadout[currentIndex].CanFire())
+                            {
+                                photonView.RPC("Shoot", RpcTarget.All, Input.GetKey(KeyCode.Z));
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (Input.GetMouseButton(0) && currentCooldown<=0)//LPM
+                        {
+                            if (loadout[currentIndex].CanFire())
+                            {
+                                photonView.RPC("Shoot", RpcTarget.All, Input.GetKey(KeyCode.Z));
+                            }
                         }
                     }
 
@@ -80,7 +94,15 @@ namespace FPSMulti
 
                 //weapon position elasticity
                 if (currentWeapon != null)
+                { 
                     currentWeapon.transform.localPosition = Vector3.Lerp(currentWeapon.transform.localPosition, Vector3.zero, Time.deltaTime * 4f);
+                }
+
+                if (currentCooldown > 0) 
+                {
+                    currentCooldown -= Time.deltaTime * 1000;
+                    Debug.Log(currentCooldown);
+                }
             }
         }
 
@@ -161,6 +183,7 @@ namespace FPSMulti
 
             //cooldown
             currentCooldown = loadout[currentIndex].firerate;
+            Debug.Log("shoot: " + currentCooldown);
 
             //raycast
             RaycastHit hit = new RaycastHit();

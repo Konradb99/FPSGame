@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: MachineGun
   damage: 10
-  ammo: 500
-  clipsize: 30
-  firerate: 3000
+  ammo: 540
+  clipsize: 36
+  firerate: 100
   distance: 1000
   aimSpeed: 10
   bloom: 50
@@ -24,4 +24,5 @@ MonoBehaviour:
   recoil: 10
   kicback: 0.2
   reloadTime: 5
+  burst: 1
   prefab: {fileID: 7784117101757108038, guid: 983c506fcfb23ec43acd97ffbc123e5f, type: 3}

@@ -17,6 +17,7 @@ public class Gun : ScriptableObject
     public float recoil; //odrzut pionowy broni
     public float kicback;
     public float reloadTime;
+    public int burst; //0 is semi, 1 is auto, 2 is burstfire
 
     public GameObject prefab;
 
@@ -70,7 +71,7 @@ public class Gun : ScriptableObject
     public int GetClip()
     { return clip; }
 
-    public void AddToStash(int count)
+    public void AddToStash(int count) 
     {
         stash += count;
     }
