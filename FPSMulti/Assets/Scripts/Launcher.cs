@@ -16,7 +16,7 @@ namespace FPSMulti
         public override void OnConnectedToMaster() //wywo³uje join
         {
             Debug.Log("Connected.");
-            Join();
+      //      Join();
             base.OnConnectedToMaster();
         }
 

@@ -10,6 +10,7 @@ namespace FPSMulti
 
         public float speed;
         public float sprintModifier;
+        public float crouchModifier;
         public Camera normalCam;
         public Transform weaponParent;
         public float jumpForce;
@@ -19,17 +20,25 @@ namespace FPSMulti
         public float maxHealth;
         public Text debugtext;
 
+        public float crouchAmount;
+        public GameObject crouchingCollider;
+        public GameObject standingCollider;
+
+
         private Rigidbody rig;
         private float baseFOV = 60.0f; //field of view
         private float sprintFOVModifier = 1.25f;
         private bool sprint = false;
         private bool jump = false;
         private bool aim = false;
+        private bool crouch = false;
         private Vector3 weaponParentOriginal;
+        private Vector3 weaponParentCurrentPos;
         private float movementCounter;
         private float idleCounter;
         private Manager mng;
         private Weapon weapon;
+        private bool crouched;
 
         private float currentHealth;
         private Transform uiHealthBar;
@@ -77,17 +86,27 @@ namespace FPSMulti
             sprint = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
             jump = Input.GetKeyDown(KeyCode.Space);
             aim = Input.GetKey(KeyCode.Z) || Input.GetMouseButton(1);
-
+            crouch =  Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl);
+           
             //States
             bool isGrounded = Physics.Raycast(groundDetector.position, Vector3.down, 0.15f, ground);
             bool isJumping = jump && isGrounded;
             bool isSprinting = sprint && vMove > 0 && !isJumping && isGrounded; //czyli tylko gdy porusza siê w przod
+            bool isCrounching = crouch && !isSprinting && isGrounded;
 
+            //Crouching
+            if(isCrounching)
+            {
+                photonView.RPC("SetCrouch", RpcTarget.All, !crouched);
+            }
             //Jumping
             if (isJumping)
+            {
+                if (crouched) photonView.RPC("SetCrouch", RpcTarget.All, false);
                 rig.AddForce(Vector3.up * jumpForce);
+            }
 
-            if (Input.GetKeyDown(KeyCode.U)) TakeDamage(50);
+            if (Input.GetKeyDown(KeyCode.U)) TakeDamage(100);
 
             //UI Refreshes
             RefreshHealthBar();
@@ -121,8 +140,13 @@ namespace FPSMulti
             //Sprint - velocity and field of view
             if (isSprinting)
             {
+                if (crouched) photonView.RPC("SetCrouch", RpcTarget.All, false);
                 adjSpeed *= sprintModifier;
                 normalCam.fieldOfView = Mathf.Lerp(normalCam.fieldOfView, baseFOV * sprintFOVModifier, Time.deltaTime * 8f);
+            }
+            else if(crouched)
+            {
+                adjSpeed *= crouchModifier;
             }
             else
             {
@@ -144,6 +168,25 @@ namespace FPSMulti
             uiHealthBar.localScale = Vector3.Lerp(uiHealthBar.localScale, new Vector3(healthRatio, 1, 1), Time.deltaTime * 8f);
         }
 
+        [PunRPC]
+        void SetCrouch(bool state)
+        {
+            if (crouched == state) return;
+            crouched = state;
+
+            if(crouched)
+            {
+                standingCollider.SetActive(false);
+                crouchingCollider.SetActive(true);
+                weaponParentCurrentPos += Vector3.down * crouchAmount;
+            }
+            else
+            {
+                standingCollider.SetActive(true);
+                crouchingCollider.SetActive(false);
+                weaponParentCurrentPos -= Vector3.down * crouchAmount;
+            }
+        }
      
         #endregion Private Methods
 

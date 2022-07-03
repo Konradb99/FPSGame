@@ -24,6 +24,7 @@ public class Gun : ScriptableObject
     private int stash; //current ammo
     private int clip; //now in clip
 
+
     public void Initialize()
     {
         stash = ammo;
