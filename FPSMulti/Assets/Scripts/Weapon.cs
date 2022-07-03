@@ -21,7 +21,6 @@ namespace FPSMulti
         private float bloomF;
         private float currentCooldown;
         private bool isReloading;
-        private AudioSource audiosource;
 
         #endregion Variables
 
