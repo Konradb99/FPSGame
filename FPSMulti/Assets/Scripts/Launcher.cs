@@ -54,7 +54,7 @@ namespace FPSMulti
         {
             if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
             {
-                PhotonNetwork.LoadLevel(1); //to jest za³adowanie sceny o takim indeksie w build settings
+                PhotonNetwork.LoadLevel("MainGameMap"); //to jest za³adowanie sceny o takim indeksie w build settings
             }
         }
     }

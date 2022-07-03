@@ -372,6 +372,7 @@
 "Assets/Scripts/Look.cs"
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/Manager.cs"
+"Assets/Scripts/MatchMakingManager.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/ScriptableObjectsGens/Blade.cs"
 "Assets/Scripts/ScriptableObjectsGens/Gun.cs"
