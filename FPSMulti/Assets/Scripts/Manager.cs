@@ -14,8 +14,8 @@ namespace FPSMulti
         public GameObject PlayerPrefab;
         public Transform[] spawnPoints;
         public Text countTime;
-        private static float startTime = 60f;//600 sekund
-        public float timeleft = ScoreManager.timeleft;
+        private static float startTime = ScoreManager.timeleft;
+        public float timeleft;
 
         public Material[] materials;
 
