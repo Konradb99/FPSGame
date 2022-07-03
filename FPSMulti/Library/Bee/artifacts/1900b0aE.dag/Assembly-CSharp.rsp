@@ -368,6 +368,7 @@
 "Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs"
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/Scripts/Ammunition.cs"
+"Assets/Scripts/HideShowMouse.cs"
 "Assets/Scripts/Launcher.cs"
 "Assets/Scripts/Look.cs"
 "Assets/Scripts/MainMenu.cs"

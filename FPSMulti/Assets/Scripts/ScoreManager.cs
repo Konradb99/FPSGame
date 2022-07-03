@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-    public static float timeleft = 60f;
+    public static float timeleft = 180f;
     
     public static List<PlayerScore> Players = new List<PlayerScore>();
 

@@ -1,6 +1,7 @@
 using UnityEngine;
 using Photon.Pun;
 using UnityEngine.UI;
+using System.Collections;
 
 namespace FPSMulti
 {
@@ -34,7 +35,7 @@ namespace FPSMulti
         private float currentHealth;
         private Transform uiHealthBar;
         private Text uiAmmo;
-        private Text uiKilled;
+    //    private Text uiKilled;
         private Text uiName;
 
         #endregion Variables
@@ -56,7 +57,7 @@ namespace FPSMulti
             {
                 uiHealthBar = GameObject.Find("HUD/Health/Bar").transform;
                 uiAmmo = GameObject.Find("HUD/Ammo/AmmoText").GetComponent<Text>();
-                uiKilled = GameObject.Find("HUD/DeathLog/DeathText").GetComponent<Text>();
+           //     uiKilled = GameObject.Find("HUD/DeathLog/DeathText").GetComponent<Text>();
                 uiName = GameObject.Find("HUD/NickName/NickText").GetComponent<Text>();
                 uiName.text = Launcher.nick;
                 
@@ -165,9 +166,8 @@ namespace FPSMulti
                 {
                     mng.Spawn();
                     photonView.RPC("DestroyGun", RpcTarget.All, 0);
-
                     PhotonNetwork.Destroy(gameObject);
-                    Debug.Log("===> You died!");
+                  
                 }
             }
         }
@@ -176,10 +176,6 @@ namespace FPSMulti
             weapon.GatheredAmmo(count);
         }
 
-        public void ShowDeath()
-        {
-
-        }
         #endregion Public Methods
     }
 }
