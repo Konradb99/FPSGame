@@ -217,7 +217,7 @@ namespace FPSMulti
 
         [PunRPC]
         private void TakeDamage(int dmg)
-        {
+        {;
             GetComponent<Player>().TakeDamage(dmg);
         }
 

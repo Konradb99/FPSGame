@@ -34,6 +34,8 @@ namespace FPSMulti
         private float currentHealth;
         private Transform uiHealthBar;
         private Text uiAmmo;
+        private Text uiKilled;
+        private Text uiName;
 
         #endregion Variables
 
@@ -54,7 +56,10 @@ namespace FPSMulti
             {
                 uiHealthBar = GameObject.Find("HUD/Health/Bar").transform;
                 uiAmmo = GameObject.Find("HUD/Ammo/AmmoText").GetComponent<Text>();
-                Debug.Log(uiAmmo.text);
+                uiKilled = GameObject.Find("HUD/DeathLog/DeathText").GetComponent<Text>();
+                uiName = GameObject.Find("HUD/NickName/NickText").GetComponent<Text>();
+                uiName.text = Launcher.nick;
+                
                 RefreshHealthBar();
             }
             baseFOV = normalCam.fieldOfView;
@@ -155,12 +160,12 @@ namespace FPSMulti
             {
                 currentHealth -= dmg;
                 Debug.Log(currentHealth);
-                //  RefreshHealthBar();
 
                 if (currentHealth <= 0)
                 {
                     mng.Spawn();
                     photonView.RPC("DestroyGun", RpcTarget.All, 0);
+
                     PhotonNetwork.Destroy(gameObject);
                     Debug.Log("===> You died!");
                 }
@@ -169,6 +174,11 @@ namespace FPSMulti
         public void GatherAmmo(int count)
         {
             weapon.GatheredAmmo(count);
+        }
+
+        public void ShowDeath()
+        {
+
         }
         #endregion Public Methods
     }

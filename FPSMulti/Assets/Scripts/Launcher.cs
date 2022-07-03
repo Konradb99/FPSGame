@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.UI;
 
 namespace FPSMulti
 {
     public class Launcher : MonoBehaviourPunCallbacks
     {
+        public Text name;
+        public static string nick;
+
         public void Awake() //wlacza siê ta funkcja i wywo³uje Connect()
         {
             PhotonNetwork.AutomaticallySyncScene = true;
@@ -16,6 +20,7 @@ namespace FPSMulti
         public override void OnConnectedToMaster() //wywo³uje join
         {
             Debug.Log("Connected.");
+
            // Join();
             base.OnConnectedToMaster();
         }
@@ -38,11 +43,24 @@ namespace FPSMulti
             PhotonNetwork.GameVersion = "0.0.0";
             PhotonNetwork.ConnectUsingSettings();
             //w³¹cza siê OnConnecterToMaster
+
         }
 
         public void Join()
         {
-            PhotonNetwork.JoinRandomRoom(); //do³¹cza, a jesli nie, wywo³uje OnJoinRandomFailed
+            if(name.text!=null && name.text!="")
+            {
+                nick = name.text;
+                ScoreManager.NewPlayer(nick);
+                PhotonNetwork.JoinRandomRoom(); //do³¹cza, a jesli nie, wywo³uje OnJoinRandomFailed
+
+
+            }
+            else
+            {
+                Debug.Log("NAME ERROR");
+            }
+   
         }
 
         public void Create()
